@@ -10,17 +10,22 @@
 #include <CommandLine.h>
 
 void loop() {
-  	// put your main code here, to run repeatedly:
+	// Проверяем, поступила ли новая команда
 	if(hasCommand()){
+		// Считываем команду в переменную command
 		const char *command = getCommand();
 
+		// Если команда nunmer
 		if(strcmp(command, "number") == 0){
+				// Считываем следующий числовой аргумент
 	      int number = getArgInt();
 	      
 	      Serial.print("Input number: ");
 	      Serial.println(number);
 	    }
+	  // Если команда word
 		else if(strcmp(command, "word") == 0){
+				// Считываем слудеющий текстовой аргумент
 	      char *word = getArg();
 
 	      Serial.print("Input word: ");
