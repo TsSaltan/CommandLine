@@ -38,3 +38,8 @@ void loop() {
 ```
 При вводе команды *number 123* будет возвращено *Input number: 123*.
 При вводе *world is great* будет возвращено *Input word: is*.
+
+## Добавление библиотеки в свой проект как подмодуль
+```cmd
+git submodule add https://github.com/tssaltan/CommandLine libraries/CommandLine
+```
